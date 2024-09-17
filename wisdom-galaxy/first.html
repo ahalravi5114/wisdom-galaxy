@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wisdom Galaxy</title>
+<style>
+    body {
+        font-family: Georgia, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .header {
+        text-align: center;
+    }
+    .logo {
+        font-size: 36px;
+        font-weight: bold;
+        color: #007bff;
+        font-family: 'Lobster', cursive;
+    }
+    .tagline {
+        font-size: 24px;
+        color: #333;
+        white-space: nowrap;
+    }
+    .marquee-container {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .marquee-content {
+        color: white;
+        display: inline-block;
+        animation: marquee 20s linear infinite;
+    }
+    @keyframes marquee {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+    .button-container {
+        margin-top: 20px;
+    }
+    .signup-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body background="https://e0.pxfuel.com/wallpapers/575/224/desktop-wallpaper-library-%E2%80%A2-trump-library-aesthetic-laptop.jpg">
+<div class="header">
+    <div class="logo"><strong> Wisdom Galaxy</strong></div>
+    <div class="tagline">
+        <div class="marquee-container">
+            <div class="marquee-content">Your all in one learning destination</div>
+        </div>
+    </div>
+    <div class="button-container">
+        <button class="signup-button" onclick="location.href='login.html'">log In</button>
+        <button class="signup-button" onclick="location.href='C:\htdocs\project\.vscode\signup.php'">signup</button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student community</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    header, footer {
+        background-color: #f2f2f2;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    main {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    .question {
+        margin-bottom: 20px;
+    }
+
+    .question h2 {
+        color: #333;
+    }
+
+    .actions button {
+        margin-right: 10px;
+    }
+
+    .comment-section {
+        margin-top: 10px;
+    }
+
+    .comment-section input[type="text"] {
+        width: calc(100% - 80px);
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    .comments {
+        margin-top: 10px;
+    }
+
+    .comment {
+        background-color: #f2f2f2;
+        padding: 5px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body background="learnica.jpeg">
+<div class="container">
+    <header>
+        <h1>Student Community</h1>
+        <!-- Add navigation links, user profile, etc. here -->
+    </header>
+
+    <main>
+        <div class="question">
+            <h2>What is the best way to learn DBMS?</h2>
+
+            <div class="actions">
+                <button class="like-btn">Like</button>
+                <button class="share-btn">Share</button>
+            </div>
+            <div class="comment-section">
+                <input type="text" placeholder="Write a comment">
+                <button class="comment-btn">Comment</button>
+                <div class="comments">
+                    <!-- Comments will be displayed here -->
+                </div>
+            </div>
+        </div>
+        <!-- More questions can be added similarly -->
+    </main>
+
+    <footer>
+        <!-- Add footer content here -->
+    </footer>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const commentBtns = document.querySelectorAll('.comment-btn');
+
+        commentBtns.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                const input = btn.previousElementSibling;
+                const commentText = input.value.trim();
+
+                if (commentText !== '') {
+                    const commentSection = btn.parentElement.querySelector('.comments');
+                    const commentDiv = document.createElement('div');
+                    commentDiv.classList.add('comment');
+                    commentDiv.textContent = commentText;
+                    commentSection.appendChild(commentDiv);
+
+                    // Clear input after posting comment
+                    input.value = '';
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

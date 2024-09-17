@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professor Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 600px;
+      margin: 100px auto;
+      text-align: center;
+      color: #fff;
+    }
+
+    .form-input {
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button.login {
+      background-color: #8a2be2; /* Violet */
+      color: #fff;
+    }
+
+    .button:hover {
+      background-color: #6a1b9a; /* Darker Violet */
+    }
+  </style>
+</head>
+<body background="learnica.jpeg">
+
+<div class="container">
+  <h2>Professor Login</h2>
+  <div class="form-input">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div class="form-input">
+    <label for="name">Password:</label>
+    <input type="text" id="password" name="password" required>
+  </div>
+ 
+ 
+  <button class="button login"  onclick="location.href='home.html'">Login</button>
+</div>
+
+<script>
+function login() {
+  // Perform login validation and processing here
+  // For demonstration purposes, you can access the entered values like this:
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const dob = document.getElementById('dob').value;
+  
+  // You can then perform further actions like sending the data to a server for authentication
+}
+</script>
+
+</body>
+</html>

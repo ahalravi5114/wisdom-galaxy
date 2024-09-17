@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Article Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://img.freepik.com/free-vector/realistic-style-technology-particle-background_23-2148426704.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  header {
+    background-color:rgb(111, 88, 171);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  /* Styling for the image mapping */
+  .article-map {
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+  }
+
+  .article-map img {
+    width: 100%;
+    height: auto;
+  }
+
+  .article-map a {
+    position: absolute;
+    display: inline-block;
+  }
+
+  /* Specific positioning for each area */
+  .area1 {
+    top: 20%;
+    left: 20%;
+  }
+
+  .area2 {
+    top: 40%;
+    left: 50%;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Article Page</h1>
+</header>
+
+<div class="container">
+  <!-- Image map for articles -->
+  <div class="article-map">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuYcj7Llpf1YCNRpkjFPekkHjHFxvHsexydG6D86Nz4g&s" alt="Article 1" usemap="#articlemap1"><strong> Research paper on chemical engineering</strong>
+    <map name="articlemap1">
+      <area shape="rect" coords="5,2,606,564" alt="Article 1" href="https://think.taylorandfrancis.com/access-chemistry-content/?gad_source=1&gclid=Cj0KCQjwiMmwBhDmARIsABeQ7xSVF1-lOxQf9Oa0rQ6tZmZqWyn_QyJALaCPZWg0BHcn5cxsaROp5zEaApK7EALw_wcB"class="area1">
+    </map>
+  </div>
+  <br><br><br>
+  <div class="article-map">
+    <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBBbtbW24xeNz_9q_Y0OMokVjXA3L-vGHjJK1c8Jj-qw&s" alt="Article 2" usemap="#articlemap2"><strong> Research paper on global governance</strong>
+    <map name="articlemap2">
+      <area shape="rect" coords="4,1,583,638" alt="Article 2" href="https://drodrik.scholar.harvard.edu/sites/scholar.harvard.edu/files/dani-rodrik/files/rethinking_global_governance_03132024.pdf" class="area2">
+    </map>
+  </div>
+</div>
+
+</body>
+</html>
